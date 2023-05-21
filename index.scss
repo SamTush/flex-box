@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+$color: #333;
+$main-background: #a1c3ff;
+$background: #3474e6;
+$background-color: #0151cc;
+$background-card: #0a51cc;
+$white: #fff ;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+body {
+  background-color: $main-background;
+  font-family: 'Poppins', sans-serif;
+  color: $color;
+
+  h1, h3 {
+    margin-bottom: 17px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  nav .container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  nav {
+    background-color: $background;
+    color: $white;
+    height: 60px;
+    padding: 0 35px;
+
+    .container-nav {
+        ul {
+            list-style: none;
+            display: flex;
+    
+            a {
+                text-decoration: none;
+                color: $white;
+                font-size: 18px;
+                font-weight: bold;
+                margin-left: 24px;
+            }
+        }
+    
+        div {
+            font-size: x-large;
+            font-weight: bold;
+        }
+    }
+  }
+
+  header {
+    background-color: $background-color;
+    color: $white;
+    min-height: 400px;
+
+    .square-one {
+        grid-area: 'square1';
+    }
+
+    .square-two {
+        grid-area: 'square2';
+    }
+
+    .square-three {
+        grid-area: 'square3';
+    }
+
+    .square-four {
+        grid-area: 'square4';
+    }
+
+    .square-five {
+        grid-area: 'square5';
+    }
+
+    .square-six {
+        grid-area: 'square6';
+    }
+
+    .square-seven {
+        grid-area: 'square7';
+    }
+
+    .square-eight {
+        grid-area: 'square8';
+    }
+
+    .square-nine {
+        grid-area: 'square9';
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-areas: 
+            'square1 square2 square3'
+            'square4 square5 square6'
+            'square7 square8 square9'
+            ;
+        max-width: 350px;
+        height: 350px;
+        padding: 40px;
+
+        .square {
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+
+    .container-header {
+        display: flex;
+        align-items: center;
+    }
+  }
+
+  section {
+    .container {
+        display: flex;
+        gap: 20px;
+        color: $white;
+        margin-top: 24px;
+        margin-bottom: 80px;
+
+        .cards {
+            background-color: $background-card;
+            padding: 20px;
+            border-radius: 15px;
+            flex: 1;
+        }
+    }
+  }
+}
