@@ -95,6 +95,10 @@ body header .container-grid .square img {
 body header .container-header {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+body header .container-header .title {
+  max-width: 600px;
 }
 body section .container {
   display: flex;
@@ -102,10 +106,34 @@ body section .container {
   color: #fff;
   margin-top: 24px;
   margin-bottom: 80px;
+  flex-wrap: wrap;
+  max-width: 1100px;
 }
 body section .container .cards {
   background-color: #0a51cc;
   padding: 20px;
   border-radius: 15px;
   flex: 1;
+  box-shadow: 0 3px 5px #333;
+}
+body section .container .cards i {
+  margin-right: 8px;
+}
+
+@media (max-width: 1009px) {
+  body header .container-header {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+  body header .container-header .container-grid {
+    margin-bottom: 40px;
+  }
+  body section .container {
+    display: block;
+    text-align: center;
+  }
+  body section .cards {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=index.css.map */

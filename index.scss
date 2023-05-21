@@ -129,6 +129,11 @@ body {
     .container-header {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+
+        .title {
+            max-width: 600px;
+        }
     }
   }
 
@@ -139,13 +144,47 @@ body {
         color: $white;
         margin-top: 24px;
         margin-bottom: 80px;
+        flex-wrap: wrap;
+        max-width: 1100px;
 
         .cards {
             background-color: $background-card;
             padding: 20px;
             border-radius: 15px;
             flex: 1;
+            box-shadow: 0 3px 5px $color;
+
+            i {
+                margin-right: 8px;
+            }
         }
     }
   }
+}
+
+@media (max-width: 1009px) {
+    body {
+        header {
+            .container-header {
+                flex-direction: column;
+                padding-top: 20px;
+                text-align: center;
+
+                .container-grid {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        section {
+            .container {
+                display: block;
+                text-align: center;
+            }
+
+            .cards {
+                margin-top: 20px;
+            }
+        }
+    }
 }
